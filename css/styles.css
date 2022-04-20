@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
+html{
+    line-height:1.15;
+    -webkit-text-size-adjust:100%
+}
+
+header{
+    background-color: rgb(36, 35, 35);
+    padding: 1rem 0 3rem 0;
+    text-align: center;
+    overflow:hidden;
+}
+
+body{
+    margin: 0; 
+    font-family: 'Lato', sans-serif;
+    background-color: rgb(53, 52, 52);
+}
+
+h1, h2, p, span{
+    text-align: center;
+    color: rgb(216, 208, 208);
+}
+
+span{
+    font-weight: 900;
+}
+
+.Nproceso{
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.formulario{
+    color: rgb(216, 208, 208);
+}
+
+.formulario legend{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.formulario label{
+    margin-top: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+}
+
+.formulario input:not([type="submit"]){
+    padding: .5rem;
+    display: block;
+    width: 99%;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: .5rem;
+}
+
+.boton{
+    background-color: rgba(19, 204, 19, 0.87);
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 1rem 3rem;
+    text-align: center;
+    margin-top: .5rem;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
+
+.botono{
+    background-color: rgba(19, 204, 19, 0.87);
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 1rem 3rem;
+    text-align: center;
+    margin-top: .5rem;
+    display: none;
+    border: none;
+    cursor: pointer;
+}
+
+.boton:hover{
+    background-color: rgba(17, 158, 17, 0.87);
+}
+
+.contenedor{
+    margin: 3rem;
+    display:grid;
+    gap: 1rem;
+    grid-template-columns: repeat(20, 1fr);
+}
+
+.contenedor-PC{
+    margin: 3rem;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.tabla {
+    width: 80%;
+    border-spacing: 0;
+    margin: 0 auto;
+    color: white;
+}
+
+.tabla thead{
+    background-color: rgba(19, 204, 19, 0.87);
+}
+
+.tabla td{
+    margin-left: 1rem;
+    text-align: center; 
+}
+
+.ttotal{
+    
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.alerta{
+    background-color: rgb(139, 11, 11);
+}
+
+.img{
+    width: 3rem;
+    margin: 0;
+}
+
+/* .icon {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    -webkit-mask: url(../img/../img/axolotl.svg) no-repeat 50% 50%;
+    mask: url(../img/../img/axolotl.svg) no-repeat 50% 50%;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+} */
+
+  
+.icon {
+    --size: 50px;
+    display: inline-block;
+    width: var(--size);
+    height: var(--size);
+    transition: .12s;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    -webkit-mask-image: url(../img/axolotl.svg);
+    mask-image: url(../img/axolotl.svg);
+    background: rgb(48, 47, 47);
+}
+
+.icon1 {
+    --size: 50px;
+    display: none;
+    width: var(--size);
+    height: var(--size);
+    transition: .12s;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    -webkit-mask-image: url(../img/axolotl.svg);
+    mask-image: url(../img/axolotl.svg);
+    background: rgb(48, 47, 47);
+}
+
+.grid-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+ 
+.icon-producto{
+    width: 10rem;
+    height: 10rem;
+    -webkit-mask-image: url(../img/egg-clutch.svg);
+    mask-image: url(../img/egg-clutch.svg);
+    background: rgb(48, 47, 47);
+}
+
+.icon-consumidor{
+    width: 10rem;
+    height: 10rem;
+    -webkit-mask-image: url(../img/cherish.svg);
+    mask-image: url(../img/cherish.svg);
+    background: rgb(48, 47, 47);
+}
+
+.icon-color{
+    animation: 2s colorfull infinite alternate;
+}
+
+@keyframes colorfull{
+  0%{ background: rgb(253, 114, 114);}
+  25%{ background: rgb(155, 67, 67);}
+  75%{ background: rgb(167, 73, 73);}
+  100%{ background: rgb(253, 114, 114);}
+}
+
+.icon-select{
+    animation: 3s selected infinite alternate;
+}
+
+@keyframes selected{
+  0%{ background: rgb(255, 255, 255);}
+  25%{ background: rgb(186, 187, 189);}
+  75%{ background: rgb(255, 255, 255);}
+  100%{  background: rgb(186, 187, 189);}
+}
+
+.icon-bike {
+    background: rgb(23, 9, 209);
+    animation: 6s frames infinite alternate;
+    
+}
+  
+@keyframes frames {
+  0% { transform:translatex(10%) }
+  25% { background: rgb(231, 98, 98); }
+  75% { background: rgb(12, 128, 21); }
+  100% { transform:translatex(850%) }
+}
+
+footer{ 
+    padding: 1rem 0 3rem 0;
+    background-color: rgb(36, 35, 35);
+}
